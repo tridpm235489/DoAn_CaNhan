@@ -1,0 +1,58 @@
+{
+  "version": 1,
+  "author": "PHAN MINH TRI",
+  "editor": "wokwi",
+  "parts": [
+    { "type": "board-esp32-devkit-c-v4", "id": "esp", "top": 120, "left": 0, "attrs": {} },
+    {
+      "type": "wokwi-hc-sr04",
+      "id": "sonar2",
+      "top": -75.3,
+      "left": 197.5,
+      "attrs": { "distance": "10" }
+    },
+    {
+      "type": "wokwi-buzzer",
+      "id": "bz1",
+      "top": 2.4,
+      "left": 347.4,
+      "attrs": { "volume": "0.5" }
+    },
+    {
+      "type": "wokwi-hc-sr04",
+      "id": "sonar1",
+      "top": -75.3,
+      "left": 418.3,
+      "attrs": { "distance": "10" }
+    },
+    { "type": "wokwi-servo", "id": "servo1", "top": 100, "left": 570, "attrs": {} },
+    { "type": "wokwi-led", "id": "ledDo", "top": 340, "left": 260, "attrs": { "color": "red" } },
+    {
+      "type": "wokwi-led",
+      "id": "ledXanh",
+      "top": 340,
+      "left": 340,
+      "attrs": { "color": "green" }
+    }
+  ],
+  "connections": [
+    [ "esp:5V", "sonar2:VCC", "red", [ "h-14.8", "v-250.8", "h283.3" ] ],
+    [ "esp:5V", "sonar1:VCC", "red", [ "h-38.8", "v-232.8", "h527.3" ] ],
+    [ "esp:5V", "servo1:V+", "red", [ "v209.2", "h542.2", "v-369.2" ] ],
+    [ "esp:GND.3", "sonar1:GND", "black", [ "h420.5", "v-195.6" ] ],
+    [ "sonar1:GND", "servo1:GND", "black", [ "h15", "v157.2" ] ],
+    [ "esp:GND.2", "bz1:1", "black", [ "h257.1", "v-52.8", "h16.54" ] ],
+    [ "esp:GND.2", "sonar2:GND", "black", [ "v-48", "h200.5" ] ],
+    [ "esp:23", "sonar2:TRIG", "orange", [ "h181.3", "v-117.6" ] ],
+    [ "esp:22", "sonar2:ECHO", "blue", [ "h190.9", "v-127.2" ] ],
+    [ "esp:21", "bz1:2", "magenta", [ "h266.7", "v-91.2", "h16.94" ] ],
+    [ "esp:19", "servo1:PWM", "orange", [ "h455.4", "v-44.8" ] ],
+    [ "esp:18", "sonar1:ECHO", "purple", [ "h410.9", "v-184.8" ] ],
+    [ "esp:5", "sonar1:TRIG", "green", [ "h401.3", "v-194.4" ] ],
+    [ "esp:4", "ledDo:A", "red", [ "h140.4", "v136.8", "h45" ] ],
+    [ "esp:2", "ledXanh:A", "limegreen", [ "h100.4", "v132.6", "h165" ] ],
+    [ "esp:GND.1", "ledDo:C", "black", [ "h0", "v120" ] ],
+    [ "esp:GND.1", "ledXanh:C", "gold", [ "h-62.21", "v120", "h412.6" ] ]
+  ],
+  "dependencies": {}
+}
