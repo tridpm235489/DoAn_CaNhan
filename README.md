@@ -44,6 +44,9 @@ Dự án **Thùng Rác Thông Minh** sử dụng vi điều khiển **ESP32** k�
 ### 1. Mô phỏng trên Wokwi (khuyến nghị)
 
 1. Truy cập [Wokwi.com]([https://wokwi.com](https://wokwi.com/projects/478383958858055681))
+
+https://wokwi.com/projects/478383958858055681
+
 2. Tạo project mới → chọn **ESP32**
 3. Copy nội dung file `diagram.json` và `sketch.ino` vào
 4. Thêm thư viện **ESP32Servo**
