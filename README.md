@@ -68,3 +68,14 @@ https://wokwi.com/projects/478383958858055681
 const int KHOANG_MO = 20;          // cm - khoảng cách mở nắp
 const int KHOANG_DAY = 10;         // cm - khoảng cách coi là đầy
 const int THOI_GIAN_GIU_MO = 3000; // ms - thời gian giữ nắp mở
+
+🎬 Demo
+Xem video demo tại: demo_thung_rac.mp4
+
+📄 Báo cáo
+File báo cáo đầy đủ: BaoCao_DoAn_ThungRacThongMinh_ESP32.docx
+
+👨‍💻 Tác giả
+Phan Minh Trí
+
+MSSV: DPM235489
